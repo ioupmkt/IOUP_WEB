@@ -17,7 +17,7 @@ export default function ServiceItem({
         <Box width={"50%"}>
           <Typography
             sx={{
-              fontFamily: "Filson",
+              fontFamily: "Filson Pro",
               fontSize: { md: 49, xs: 28 },
               fontWeight: 600,
               lineHeight: { md: "40px", xs: "25px" },
@@ -36,7 +36,7 @@ export default function ServiceItem({
         >
           <Typography
             sx={{
-              fontFamily: "Filson,Roboto",
+              fontFamily: "Filson Pro,Roboto",
               fontSize: { md: 25, xs: 18 },
               fontWeight: 600,
               lineHeight: { md: "30px", xs: "20px" },
@@ -48,7 +48,7 @@ export default function ServiceItem({
           </Typography>
           <Typography
             sx={{
-              fontFamily: "Filson,Roboto",
+              fontFamily: "Filson Pro,Roboto",
               fontSize: { md: 16, xs: 12 },
               fontWeight: 400,
               lineHeight: { md: "30px", xs: "20px" },

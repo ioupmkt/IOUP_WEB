@@ -9,6 +9,7 @@ import App from './App'
 import Footer from './components/Footer'
 
 
+
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <BrowserRouter>

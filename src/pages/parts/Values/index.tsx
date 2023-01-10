@@ -21,7 +21,7 @@ export default function Valores() {
     <Section name="Valores" id="values" >
       <Stack>
         <DividerH1/>
-      <Typography sx={{fontFamily:'Filson',fontSize:{md:31,xs:23},fontWeight:700,textTransform:'uppercase',color:'#325CD9',paddingLeft:1}} > Valores</Typography>
+      <Typography sx={{fontFamily:'Filson Pro',fontSize:{md:31,xs:23},fontWeight:700,textTransform:'uppercase',color:'#325CD9',paddingLeft:1}} > Valores</Typography>
       </Stack>
       {/* <Stack flexDirection={{ md: "row", xs: "column" }}> */}
         <Grid container spacing={0} direction={{md:'row',xs:'column'}}>

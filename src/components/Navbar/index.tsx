@@ -125,7 +125,7 @@ function ResponsiveAppBar() {
               >
                 {pages.map((page, index) => (
                   <MenuItem key={index} onClick={() => ScrollTo(page.href)}>
-                    <Typography textAlign="center">{page.name}</Typography>
+                    <Typography fontFamily={'Filson Pro,Roboto'} textAlign="center">{page.name}</Typography>
                   </MenuItem>
                 ))}
               </Menu>

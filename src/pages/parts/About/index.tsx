@@ -36,7 +36,7 @@ export default function Sobre(): any {
                   sx={{
                     width: "100%",
                     fontSize: "2.4375rem",
-                    fontFamily: "Filson",
+                    fontFamily: "Filson Pro",
                     fontWeight: 600,
                     color: "#325CD9",
                   }}
@@ -48,7 +48,7 @@ export default function Sobre(): any {
                   sx={{
                     fontSize: "1.25rem",
                     fontWeight: 300,
-                    fontFamily: "Filson",
+                    fontFamily: "Filson Pro",
                     color: "#404144",
                     lineHeight: "30px",
                   }}

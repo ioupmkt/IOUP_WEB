@@ -44,7 +44,7 @@ export default function Services() {
         <Typography
           sx={{
             fontSize: { md: 39, xs: 25 },
-            fontFamily: "Filson",
+            fontFamily: "Filson Pro",
             fontWeight: 600,
             color: "#325CD9",
             paddingLeft: { md: "1%", xs: "1%" },

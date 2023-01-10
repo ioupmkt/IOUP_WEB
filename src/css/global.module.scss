@@ -1,4 +1,12 @@
-@import url('https://fonts.cdnfonts.com/css/filson-pro');
+// @import url('https://fonts.cdnfonts.com/css/filson-pro');
 
 $ioup_font: 'Filson Pro';
 $ioup-blue :#325CD9;
+
+html{
+    body{
+        font-style: normal;
+        margin: 0;
+        padding: 0;
+} 
+}
