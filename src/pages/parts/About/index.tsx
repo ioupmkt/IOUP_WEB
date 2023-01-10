@@ -5,8 +5,6 @@ import { Box, Stack } from "@mui/material";
 import { BorderTop } from "@mui/icons-material";
 import TitleSection from "../../../components/TitleSection";
 
-
-
 const about_us = [
   {
     title: "Nosso DNA",
@@ -28,15 +26,15 @@ export default function Sobre(): any {
       >
         <Stack spacing={5} sx={{ width: { md: "calc(100%/3)", xs: "100%" } }}>
           {/* <DividerH1/> */}
-          {about_us.map((dna) => (
+          {about_us.map((dna, index) => (
             <>
-              <Box flexDirection={"column"}>
+              <Box flexDirection={"column"} key={index}>
                 <DividerH1 />
                 <Typography
                   sx={{
                     width: "100%",
                     fontSize: "2.4375rem",
-                    fontFamily: "Filson Pro",
+                    fontFamily: "Filson Pro Regular",
                     fontWeight: 600,
                     color: "#325CD9",
                   }}
@@ -48,7 +46,7 @@ export default function Sobre(): any {
                   sx={{
                     fontSize: "1.25rem",
                     fontWeight: 300,
-                    fontFamily: "Filson Pro",
+                    fontFamily: "Filson Pro Regular",
                     color: "#404144",
                     lineHeight: "30px",
                   }}

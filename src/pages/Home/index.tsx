@@ -13,13 +13,11 @@ function Home() {
   return (
     <>
       <Inicio />
-
       <Sobre />
       <Nos_Move />
       <Valores />
       <Services />
       <Team />
-      
     </>
   );
 }

@@ -31,7 +31,7 @@ export default function TitleSection({
           transform: { md: "rotate(-90deg)", xs: "rotate(0deg)" },
           color: "#40414440",
           fontSize: { md: `${size.md}rem`, xs: `${size.xs}rem` },
-          fontFamily: "Filson Pro, Roboto",
+          fontFamily: "Filson Pro Regular, Roboto",
           textTransform: "uppercase",
           position: { md: position, xs: position },
           left: { md: left.md, xs: left.xs },

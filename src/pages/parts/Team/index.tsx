@@ -30,12 +30,12 @@ export default function Team(){
     <Section name="Equipe" id="team">
 <Stack>
 <DividerH1/>
-<Typography sx={{fontFamily:'Filson Pro,Roboto',fontSize:{md:39,xs:25},fontWeight:600,lineHeight:{md:'30px',xs:'20px'}, color:'#325CD9',paddingLeft:'1%',paddingTop:'1rem'}}>
-Pessoas
+<Typography sx={{fontFamily:'Filson Pro Regular,Roboto',fontSize:{md:39,xs:25},fontWeight:600,lineHeight:{md:'30px',xs:'20px'}, color:'#325CD9',paddingLeft:'1%',paddingTop:'1rem'}}>
+Equipe
 </Typography>
 <Stack flexDirection={{md:'row',xs:'column'}} justifyContent={{md:'space-between',xs:'center'}} gap={{md:0,xs:'1rem'}}>
 {team.map(equipe=>(
-    <TeamItem key={equipe.image} image={equipe.image} pessoa={equipe.pessoa} />
+    <TeamItem key={equipe.pessoa} image={equipe.image} pessoa={equipe.pessoa} />
 ))}
 {/* <TeamItem image={team[0].image} pessoa={team[0].pessoa} /> */}
 </Stack>

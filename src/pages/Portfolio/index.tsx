@@ -1,39 +1,32 @@
 import { ImageList, ImageListItem, Stack } from "@mui/material";
 import PortfolioItem from "../../components/PortfolioItem";
 
-
-
-
-
-
-
-
-
-export default function Portfolio (){
-
-const jobs = [
+export default function Portfolio() {
+  const jobs = [
     {
-        image:'/img/portfolio/ocravoearosa.png',
-        client:'OCravoeaRosa',
-        link:'https://ocravoearosa.commercesuite.com.br/'
-    }
-]
+      image: "/img/portfolio/ocravoearosa.png",
+      client: "OCravoeaRosa",
+      link: "https://ocravoearosa.commercesuite.com.br/",
+    },
+  ];
 
-    return (
+  return (
     <>
-    <Stack>
-        <ImageList  variant="masonry" cols={3}>
-{jobs.map((job) =>(
-    <>
-    <ImageListItem key={job.client}>
-            <PortfolioItem client={job.client} image={job.image}link={job.link} />
-            </ImageListItem>
+      <Stack>
+        <ImageList variant="masonry" cols={3}>
+          {jobs.map((job, index) => (
+            <>
+              <ImageListItem key={index}>
+                <PortfolioItem
+                  client={job.client}
+                  image={job.image}
+                  link={job.link}
+                />
+              </ImageListItem>
             </>
-        ))}
-       
-    
-      </ImageList>
-    </Stack>
+          ))}
+        </ImageList>
+      </Stack>
     </>
-    );
+  );
 }

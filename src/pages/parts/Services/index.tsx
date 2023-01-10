@@ -44,7 +44,7 @@ export default function Services() {
         <Typography
           sx={{
             fontSize: { md: 39, xs: 25 },
-            fontFamily: "Filson Pro",
+            fontFamily: "Filson Pro Regular",
             fontWeight: 600,
             color: "#325CD9",
             paddingLeft: { md: "1%", xs: "1%" },
@@ -54,9 +54,10 @@ export default function Services() {
         </Typography>
         <Divider color={"#00000030"} />
 
-        {services.map((service) => (
+        {services.map((service, index) => (
           <>
             <ServiceItem
+              key={index}
               title={service.title}
               subtitle={service.subtitle}
               description={service.description}
@@ -67,7 +68,6 @@ export default function Services() {
             />
           </>
         ))}
-        
       </Stack>
     </Section>
   );

@@ -16,22 +16,18 @@ import theme from "../../css/theme";
 import Logo from "../Logo";
 import ClientArea from "../ClientArea";
 
-import styles from './styles.module.scss'
+import styles from "./styles.module.scss";
 
 const ScrollTo = (pos: any) => {
-if(pos =='/portfolio'){
-  window.location.href = '/portfolio'
+  if (pos == "/portfolio") {
+    window.location.href = "/portfolio";
+  } else {
+    let element = document.getElementById(pos);
 
-}else{
-  let element = document.getElementById(pos);
-
-  element?.scrollIntoView({ behavior: "smooth", block: "start" });
-  return;
-}
-
-  
+    element?.scrollIntoView({ behavior: "smooth", block: "start" });
+    return;
+  }
 };
-
 
 const pages = [
   {
@@ -44,11 +40,11 @@ const pages = [
   },
   {
     name: "O que nos move",
-    href: "move_us"
+    href: "move_us",
   },
   {
     name: "Valores",
-    href: "values"
+    href: "values",
   },
   {
     name: "Serviços",
@@ -58,9 +54,7 @@ const pages = [
     name: "Portfolio",
     href: "/portfolio",
   },
-  { name: "Time",
-   href: "team" 
-  },
+  { name: "Time", href: "team" },
 
   {
     name: "Contato",
@@ -83,14 +77,14 @@ function ResponsiveAppBar() {
 
   return (
     <ThemeProvider theme={theme}>
-      <AppBar sx={{background:'#FFF',boxShadow:0}} position="sticky">
-        <Container maxWidth="xl">
+      <AppBar sx={{ boxShadow: 0 }} position="sticky">
+        <Container maxWidth="xl" sx={{ paddingTop: "15px" }}>
           <Toolbar disableGutters>
             {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
             <Logo />
 
             {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
-            
+
             <Box
               justifyContent={"flex-end"}
               sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
@@ -125,18 +119,23 @@ function ResponsiveAppBar() {
               >
                 {pages.map((page, index) => (
                   <MenuItem key={index} onClick={() => ScrollTo(page.href)}>
-                    <Typography fontFamily={'Filson Pro,Roboto'} textAlign="center">{page.name}</Typography>
+                    <Typography
+                      fontFamily={"Filson Pro Regular,Roboto"}
+                      textAlign="center"
+                    >
+                      {page.name}
+                    </Typography>
                   </MenuItem>
                 ))}
               </Menu>
             </Box>
             <Box
-              sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
+              sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } ,gap:'5px' }}
               justifyContent={"center"}
             >
               {pages.map((page, index) => (
                 <Button
-                className={styles.ButtonMenu}
+                  className={styles.ButtonMenu}
                   key={index}
                   onClick={() => ScrollTo(page.href)}
                   sx={{ my: 2, color: "#010A1C", display: "block" }}
@@ -149,7 +148,7 @@ function ResponsiveAppBar() {
               sx={{ display: { xs: "none", md: "flex" } }}
               justifyContent={"flex-end"}
             >
-              <ClientArea/>
+              <ClientArea />
             </Box>
           </Toolbar>
         </Container>
