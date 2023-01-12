@@ -12,6 +12,9 @@ const theme = createTheme({
       default: "#FFF",
     },
   },
+  typography: {
+    fontFamily: "Filson Pro",
+  },
 });
 
 export default theme;

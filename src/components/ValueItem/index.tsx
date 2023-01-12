@@ -30,8 +30,8 @@ export default function ValueItem({
         alignItems={"center"}
         sx={{
           background: `url(${background})`,
-          width: { md: 300, xs: "100%" },
-          height: { md: 300, xs: 300 },
+          width: { md: 250, xs: "100%" },
+          height: { md: 365, xs: 365 },
           backgroundSize: "cover",
           borderRadius: { md: borderRadius, xs: 0 },
         }}
@@ -45,7 +45,7 @@ export default function ValueItem({
           <Typography
             component={"span"}
             sx={{
-              fontFamily: "Filson Pro Regular",
+              fontFamily: "Filson Pro",
               fontSize: { md: 31, xs: 25 },
               textTransform: "uppercase",
               fontWeight: 600,

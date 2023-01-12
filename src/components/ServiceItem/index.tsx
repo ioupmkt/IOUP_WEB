@@ -17,12 +17,12 @@ export default function ServiceItem({
         <Box width={"50%"}>
           <Typography
             sx={{
-              fontFamily: "Filson Pro Regular",
+              fontFamily: "Filson Pro",
               fontSize: { md: 49, xs: 28 },
               fontWeight: 600,
               lineHeight: { md: "40px", xs: "25px" },
               color: "#404144",
-              padding: { md: "2rem", xs: "1rem" },
+              padding: { md: "6rem", xs: "1rem" },
             }}
             component={"h2"}
           >
@@ -36,11 +36,11 @@ export default function ServiceItem({
         >
           <Typography
             sx={{
-              fontFamily: "Filson Pro Regular,Roboto",
+              fontFamily: "Filson Pro,Roboto",
               fontSize: { md: 25, xs: 18 },
-              fontWeight: 600,
+              fontWeight: 700,
               lineHeight: { md: "30px", xs: "20px" },
-              color: "#325CD9",
+              color: "#0F3684",
             }}
             component={"h2"}
           >
@@ -48,7 +48,7 @@ export default function ServiceItem({
           </Typography>
           <Typography
             sx={{
-              fontFamily: "Filson Pro Regular,Roboto",
+              fontFamily: "Filson Pro",
               fontSize: { md: 16, xs: 12 },
               fontWeight: 400,
               lineHeight: { md: "30px", xs: "20px" },

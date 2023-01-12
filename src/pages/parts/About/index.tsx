@@ -26,16 +26,16 @@ export default function Sobre(): any {
       >
         <Stack spacing={5} sx={{ width: { md: "calc(100%/3)", xs: "100%" } }}>
           {/* <DividerH1/> */}
-          {about_us.map((dna, index) => (
-            <>
-              <Box flexDirection={"column"} key={index}>
+          {about_us.map((dna) => (
+            
+              <Box flexDirection={"column"} key={dna.title}>
                 <DividerH1 />
                 <Typography
                   sx={{
                     width: "100%",
                     fontSize: "2.4375rem",
-                    fontFamily: "Filson Pro Regular",
-                    fontWeight: 600,
+                    fontFamily: "Filson Pro",
+                    fontWeight: 700,
                     color: "#325CD9",
                   }}
                   component={"h3"}
@@ -45,8 +45,8 @@ export default function Sobre(): any {
                 <Typography
                   sx={{
                     fontSize: "1.25rem",
-                    fontWeight: 300,
-                    fontFamily: "Filson Pro Regular",
+                    fontWeight: 350,
+                    fontFamily: "Filson Pro",
                     color: "#404144",
                     lineHeight: "30px",
                   }}
@@ -55,7 +55,7 @@ export default function Sobre(): any {
                   {dna.text}
                 </Typography>
               </Box>
-            </>
+            
           ))}
         </Stack>
 

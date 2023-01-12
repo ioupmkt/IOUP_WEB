@@ -14,6 +14,7 @@ type TitleSectionProps = {
     md: string;
     xs: string;
   };
+ 
 };
 
 export default function TitleSection({
@@ -22,6 +23,7 @@ export default function TitleSection({
   position,
   left,
   top,
+ 
 }: TitleSectionProps) {
   return (
     <>
@@ -31,11 +33,13 @@ export default function TitleSection({
           transform: { md: "rotate(-90deg)", xs: "rotate(0deg)" },
           color: "#40414440",
           fontSize: { md: `${size.md}rem`, xs: `${size.xs}rem` },
-          fontFamily: "Filson Pro Regular, Roboto",
+          fontFamily: "Filson Pro, Roboto",
           textTransform: "uppercase",
+          fontWeight:900,
           position: { md: position, xs: position },
           left: { md: left.md, xs: left.xs },
           top: { md: top?.md, xs: top?.xs },
+         
         }}
         component={"h1"}
       >

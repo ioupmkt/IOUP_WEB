@@ -30,7 +30,7 @@ export default function Team(){
     <Section name="Equipe" id="team">
 <Stack>
 <DividerH1/>
-<Typography sx={{fontFamily:'Filson Pro Regular,Roboto',fontSize:{md:39,xs:25},fontWeight:600,lineHeight:{md:'30px',xs:'20px'}, color:'#325CD9',paddingLeft:'1%',paddingTop:'1rem'}}>
+<Typography sx={{fontFamily:'Filson Pro,Roboto',fontSize:{md:39,xs:25},fontWeight:600,lineHeight:{md:'30px',xs:'20px'}, color:'#325CD9',paddingLeft:'1%',paddingTop:'1rem'}}>
 Equipe
 </Typography>
 <Stack flexDirection={{md:'row',xs:'column'}} justifyContent={{md:'space-between',xs:'center'}} gap={{md:0,xs:'1rem'}}>

@@ -19,11 +19,11 @@ const valores = [
 export default function Valores() {
   return (
     <Section name="Valores" id="values">
-      <Stack>
+      {/* <Stack>
         <DividerH1 />
         <Typography
           sx={{
-            fontFamily: "Filson Pro Regular",
+            fontFamily: "Filson Pro",
             fontSize: { md: 31, xs: 23 },
             fontWeight: 700,
             textTransform: "uppercase",
@@ -34,29 +34,37 @@ export default function Valores() {
           {" "}
           Valores
         </Typography>
-      </Stack>
+      </Stack> */}
       {/* <Stack flexDirection={{ md: "row", xs: "column" }}> */}
       <Grid
+        container={true}
         display={"flex"}
         flexWrap={"wrap"}
         spacing={0}
         gap={{ md: 0, xs: 1 }}
         direction={{ md: "row", xs: "column" }}
         padding={{ md: "0 5px", xs: "0 5px" }}
+        maxWidth={{ xs: "100%", sm: "50%", md: "85%" }}
       >
         {valores.map((valor, index) => (
-          <>
+          <div key={index}>
             <ValueItem
               key={index}
               index={index}
               background={valor.background}
               text={valor.text}
             />
-          </>
+          </div>
         ))}
       </Grid>
 
-      {/* <TitleSection title="Valores" size={{md:23,xs:35}} left={{md:'0',xs:'0'}} position={'relative'} top={{md:'0',xs:'0'}}/> */}
+      <TitleSection
+        title="Valores"
+        size={{ md: 8, xs: 4 }}
+        left={{ md: "35%", xs: "0" }}
+        position={"relative"}
+        top={{ md: "-54rem", xs: "0" }}
+      />
 
       {/* </Stack> */}
     </Section>
