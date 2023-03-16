@@ -14,9 +14,9 @@ function App() {
         //   entry.target.setAttribute("data-animate", "not-animate");
         // }
       }),
-        { root: null, rootMargin: "0px", threshold: [0, 0.5, 1] };
+        { root: null, rootMargin: "0px", threshold: [0.5, 1, 1.5, 2] };
     });
-    Array.from(document.querySelectorAll("section")).forEach((element) => {
+    Array.from(document.querySelectorAll("div")).forEach((element) => {
       observer.observe(element);
     });
   });
