@@ -19,13 +19,26 @@
 //     transform:translateX(-100vw)
 // }
 
-[data-animate=animate]{
-    animation: slide 2s ease-in-out;
-    transform: translateX(0);
-    
+[data-animate=slide]{
+    animation: slide 2.5s both;
+    // transform: translateX(0);
     
 }
+[data-animate=grow]{
+    animation: growel 2.5s both;
+}
+[data-animate=slide2]{
+animation: slide2 2.5s both;
+}
 
+@keyframes slide2 {
+    from{
+transform:translateX(100vw)
+    }
+    to{
+transform: translateX(0);
+    }
+}
 
 @keyframes slide {
     from{

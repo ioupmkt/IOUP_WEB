@@ -12,7 +12,7 @@ export default function DividerH1() {
           height: "6px !important",
           border: "0",
           background: "#05C7F2 !important",
-          marginBottom:{md:1.5,xs:1.5},
+          marginBottom: { md: 1.5, xs: 1.5 },
         }}
         component={"hr"}
       />

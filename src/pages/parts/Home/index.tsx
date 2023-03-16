@@ -69,7 +69,7 @@ export default function Home() {
           />
         </Box>
       </Box>
-      {/* <Background/> */}
+      <Background />
 
       <Box sx={{ padding: "10px" }}>
         <Typography
