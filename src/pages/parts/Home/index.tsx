@@ -1,7 +1,10 @@
 import { Box, Typography } from "@mui/material";
-import global from "../../../css/global.module.scss";
 import Background from "../../../components/Background";
 import { Section } from "../../../components/Section";
+import BtnEspecialista from "../../../components/BtnEspecialista";
+
+import { createRef } from "react";
+
 export default function Home() {
   return (
     <Section name="home" id="home">
@@ -21,16 +24,16 @@ export default function Home() {
             sx={{
               color: "#325CD9",
               fontFamily: "Filson Pro",
-              fontSize: 49,
+              fontSize: { md: "61px", xs: "30.5px" },
               fontWeight: 700,
-              lineHeight: "48px",
-              lineBreak:'strict',
-              width:{md:'34.5625rem',xs: "100%"}
-            //   padding: "0 12rem 0 0",
+              lineHeight: { md: "64px", xs: "34px" },
+              lineBreak: "strict",
+              // width: { md: "34.5625rem", xs: "100%" },
+              //   padding: "0 12rem 0 0",
             }}
             component="h1"
           >
-            Criamos Arte {'\n'} Geramos Resultado
+            Criamos Arte, {"\n"} Geramos Resultado.
           </Typography>
           <Typography
             component="p"
@@ -40,13 +43,16 @@ export default function Home() {
               fontSize: "1.9375rem",
               margin: "1.75rem 0",
               fontWeight: 400,
-              padding: "0 12rem 0 0",
+              // padding: "0 12rem 0 0",
               lineHeight: "40px",
             }}
           >
             Descubra agora como podemos transformar sua vida através do seu
             negócio.
           </Typography>
+          <Box m={{ md: "1rem 0", xs: "1rem 0" }}>
+            <BtnEspecialista />
+          </Box>
         </Box>
         <Box
           sx={{
@@ -55,7 +61,12 @@ export default function Home() {
             width: { md: "50%", xs: "100%" },
           }}
         >
-          <img width={"100%"} src="img/Image1.png" alt="Image Home" />
+          <img
+            width={"100%"}
+            src="img/Image1.png"
+            alt="Image Home"
+            loading="lazy"
+          />
         </Box>
       </Box>
       {/* <Background/> */}
@@ -63,7 +74,7 @@ export default function Home() {
       <Box sx={{ padding: "10px" }}>
         <Typography
           sx={{
-            fontSize: "2.4375rem",
+            fontSize: { md: "39px", xs: "19.5px" },
             color: "#404144",
             fontFamily: "Filson Pro",
             textAlign: "center",
@@ -75,7 +86,12 @@ export default function Home() {
         >
           Ignorar o
           <Typography
-            sx={{ color: "#325cd9", fontSize: "2.4375rem" ,fontFamily: "Filson Pro",fontWeight:400 }}
+            sx={{
+              color: "#325cd9",
+              fontSize: { md: "39px", xs: "19.5px" },
+              fontFamily: "Filson Pro",
+              fontWeight: 400,
+            }}
             component="span"
           >
             {" "}
@@ -83,7 +99,12 @@ export default function Home() {
           </Typography>{" "}
           é como abrir um negócio e não contar para ninguém .
           <Typography
-            sx={{ color: "#325cd9", fontSize: "2.4375rem",fontFamily: "Filson Pro" ,fontWeight:400 }}
+            sx={{
+              color: "#325cd9",
+              fontSize: { md: "39px", xs: "19.5px" },
+              fontFamily: "Filson Pro",
+              fontWeight: 400,
+            }}
             component="span"
           >
             {" "}
@@ -91,7 +112,12 @@ export default function Home() {
           </Typography>{" "}
           rapidamente alguém vai passar na sua frente e{" "}
           <Typography
-            sx={{ color: "#325cd9", fontSize: "2.4375rem" ,fontFamily: "Filson Pro",fontWeight:400 }}
+            sx={{
+              color: "#325cd9",
+              fontSize: { md: "39px", xs: "19.5px" },
+              fontFamily: "Filson Pro",
+              fontWeight: 400,
+            }}
             component="span"
           >
             seu negócio vai se tornar obsoleto.

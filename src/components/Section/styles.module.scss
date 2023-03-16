@@ -3,7 +3,8 @@
     flex-direction: column;
     margin: 3rem 0;
     padding: 0 1rem;
-
+    // transform: translateX(0);
+    // animation: slide 3s linear;
     // h1{
     //     font-family: 'Roboto';
     //     font-weight: 900;
@@ -11,4 +12,38 @@
     //     text-transform: uppercase;
     //     text-align: center;
     // }
+
+
+}
+[data-animate=not-animate]{
+    // transform:translateX(-100vw)
+}
+
+[data-animate=animate]{
+    animation: slide 1.5s linear;
+    transform: translateX(0);
+    
+    
+}
+
+
+@keyframes slide {
+    from{
+transform: translateX(-100vw);
+    }
+    
+    to{
+transform: translateX(0);
+    }
+
+}
+
+@keyframes growel {
+    from{
+        transform: scale3d(0,0,0);
+
+    }to{
+        transform: scale3d(1,1,1);
+
+    }
 }

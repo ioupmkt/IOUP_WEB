@@ -142,8 +142,41 @@ html{
         margin: 0;
         padding: 0;
 } 
-.App{
+
     $ioup_font: 'Filson Pro';
     $ioup-blue :#325CD9;
+
 }
+
+
+@keyframes growel {
+    from{
+        transform: scale3d(0,0,0);
+
+    }to{
+        transform: scale3d(1,1,1);
+
+    }
+}
+
+
+[data-animate=animate]{
+    animation: slide 3s linear;
+    // transform: translateX(0);
+    
+    
+}
+[data-animate=not-animate]{
+    // transform:translateX(-100vw)
+}
+
+@keyframes slide {
+    from{
+transform: translateX(-100vw);
+    }
+    
+    to{
+transform: translateX(0);
+    }
+
 }

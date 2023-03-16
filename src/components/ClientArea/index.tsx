@@ -1,10 +1,16 @@
+import styles from "./styles.module.scss";
 
-import styles from './styles.module.scss'
-
-export default function ClientArea(){
-    return(
+export default function ClientArea() {
+  return (
     <>
-<a className={styles.ClientArea} href="http://"> Área do Cliente</a>
-
-    </>);
+      <a
+        className={styles.ClientArea}
+        href="https://uweb.app/ioupmkt.com/login"
+        target={"_blank"}
+      >
+        {" "}
+        Área do Cliente
+      </a>
+    </>
+  );
 }

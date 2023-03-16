@@ -45,6 +45,7 @@ export default function Valores() {
         direction={{ md: "row", xs: "column" }}
         padding={{ md: "0 5px", xs: "0 5px" }}
         maxWidth={{ xs: "100%", sm: "50%", md: "85%" }}
+        order={{md: 0, xs: 1}}
       >
         {valores.map((valor, index) => (
           <div key={index}>
@@ -57,15 +58,16 @@ export default function Valores() {
           </div>
         ))}
       </Grid>
-
+<Stack order={{md:1,xs:0}}>
       <TitleSection
         title="Valores"
         size={{ md: 8, xs: 4 }}
         left={{ md: "35%", xs: "0" }}
         position={"relative"}
         top={{ md: "-54rem", xs: "0" }}
+        
       />
-
+</Stack>
       {/* </Stack> */}
     </Section>
   );

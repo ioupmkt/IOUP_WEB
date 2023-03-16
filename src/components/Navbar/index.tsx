@@ -27,6 +27,11 @@ const ScrollTo = (pos: any) => {
     element?.scrollIntoView({ behavior: "smooth", block: "start" });
     return;
   }
+  if (window.location.pathname == "/portfolio") {
+    if (pos == "home") {
+      window.location.href = "/";
+    }
+  }
 };
 
 const pages = [
@@ -61,6 +66,10 @@ const pages = [
     href: "contact_us",
   },
 ];
+
+// document.addEventListener("scroll", function(){
+//   console.log(scrollY);
+// } );
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
@@ -130,7 +139,11 @@ function ResponsiveAppBar() {
               </Menu>
             </Box>
             <Box
-              sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } ,gap:'5px' }}
+              sx={{
+                flexGrow: 1,
+                display: { xs: "none", md: "flex" },
+                gap: "5px",
+              }}
               justifyContent={"center"}
             >
               {pages.map((page, index) => (

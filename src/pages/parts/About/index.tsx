@@ -27,35 +27,33 @@ export default function Sobre(): any {
         <Stack spacing={5} sx={{ width: { md: "calc(100%/3)", xs: "100%" } }}>
           {/* <DividerH1/> */}
           {about_us.map((dna) => (
-            
-              <Box flexDirection={"column"} key={dna.title}>
-                <DividerH1 />
-                <Typography
-                  sx={{
-                    width: "100%",
-                    fontSize: "2.4375rem",
-                    fontFamily: "Filson Pro",
-                    fontWeight: 700,
-                    color: "#325CD9",
-                  }}
-                  component={"h3"}
-                >
-                  {dna.title}
-                </Typography>
-                <Typography
-                  sx={{
-                    fontSize: "1.25rem",
-                    fontWeight: 350,
-                    fontFamily: "Filson Pro",
-                    color: "#404144",
-                    lineHeight: "30px",
-                  }}
-                  component={"p"}
-                >
-                  {dna.text}
-                </Typography>
-              </Box>
-            
+            <Box flexDirection={"column"} key={dna.title}>
+              <DividerH1 />
+              <Typography
+                sx={{
+                  width: "100%",
+                  fontSize: "2.4375rem",
+                  fontFamily: "Filson Pro",
+                  fontWeight: 700,
+                  color: "#325CD9",
+                }}
+                component={"h3"}
+              >
+                {dna.title}
+              </Typography>
+              <Typography
+                sx={{
+                  fontSize: "1.25rem",
+                  fontWeight: 350,
+                  fontFamily: "Filson Pro",
+                  color: "#404144",
+                  lineHeight: "30px",
+                }}
+                component={"p"}
+              >
+                {dna.text}
+              </Typography>
+            </Box>
           ))}
         </Stack>
 
@@ -69,7 +67,7 @@ export default function Sobre(): any {
           />
         </Box>
         <Box sx={{ width: { md: "calc(100%/3)", xs: "100%" } }}>
-          <img src="/img/Sobre.png" alt="" width={"100%"} />
+          <img src="/img/Sobre.png" alt="" width={"100%"} loading={"lazy"} />
         </Box>
       </Stack>
     </Section>

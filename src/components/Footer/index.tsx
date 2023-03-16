@@ -2,9 +2,12 @@ import styles from "./styles.module.scss";
 import Typography from "@mui/material/Typography";
 import { Box } from "@mui/material";
 import SocialList from "../SocialList";
+import AppLinks from "../AppLinks";
 
 const date = new Date();
+
 const now = date.getFullYear();
+
 export default function Footer() {
   return (
     <footer className={styles.footer_IOUP}>
@@ -18,7 +21,7 @@ export default function Footer() {
         <Box
           display={"flex"}
           flexDirection={"column"}
-          width="50%"
+          width={{ md: "50%", xs: "100%" }}
           padding={"0 2rem "}
           gap={"1rem"}
           paddingTop={{ md: "80px", xs: "0" }}
@@ -52,12 +55,13 @@ export default function Footer() {
 
           <Box>
             <SocialList />
+            <AppLinks />
           </Box>
           <Typography
             sx={{
               fontFamily: "Filson Pro",
               position: "relative",
-              top: { md: "13vh", xs: 0 },
+              top: { md: 0, xs: 0 },
               width: { xs: "100vw", md: "100%" },
             }}
             component="p"
@@ -67,8 +71,12 @@ export default function Footer() {
             reservados.&nbsp;Marília,São Paulo,Brasil. &nbsp;
           </Typography>
         </Box>
-        <Box display={"flex"} width={"50%"} justifyContent={"center"}>
-          <img src="\img\Imagem atendente.png" />
+        <Box
+          display={"flex"}
+          width={{ md: "50%", xs: "100%" }}
+          justifyContent={"center"}
+        >
+          <img style={{ width: "80%" }} src="\img\Imagem atendente.png" />
         </Box>
       </Box>
     </footer>

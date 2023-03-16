@@ -1,15 +1,14 @@
-import { ReactNode } from 'react';
-import styles from './styles.module.scss';
+import { ReactNode } from "react";
+import styles from "./styles.module.scss";
 interface SectionProps {
   children: ReactNode;
   name: string;
-  id: string
+  id: string;
 }
 
-export function Section({ children, name,id }: SectionProps) {
+export function Section({ children, id }: SectionProps) {
   return (
-    <section id={id} className={styles.Section}>
-      
+    <section id={id} className={`${styles.Section} `}>
       {children}
     </section>
   );
