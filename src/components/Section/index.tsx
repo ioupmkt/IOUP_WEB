@@ -8,7 +8,11 @@ interface SectionProps {
 
 export function Section({ children, id }: SectionProps) {
   return (
-    <section id={id} className={`${styles.Section} `}>
+    <section
+      id={id}
+      className={`${styles.Section} `}
+      data-animate={"not-animate"}
+    >
       {children}
     </section>
   );
