@@ -12,7 +12,7 @@ const routes = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/portfolio",
+        path: "portfolio",
         element: <Portfolio />,
       },
     ],
