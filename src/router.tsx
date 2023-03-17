@@ -11,4 +11,4 @@ function Rotas() {
     </Routes>
   );
 }
-export default Rotas;
+export { Rotas };

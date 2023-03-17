@@ -1,6 +1,6 @@
 import "./css/global.module.scss";
 
-import Rotas from "./router";
+import { Rotas } from "./router";
 function App() {
   window.addEventListener("load", () => {
     const observer = new IntersectionObserver((entries) => {
