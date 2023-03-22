@@ -6,6 +6,7 @@ import Portfolio from "./pages/Portfolio";
 
 const routes = createBrowserRouter([
   {
+    path: "/",
     children: [
       {
         path: "/",
