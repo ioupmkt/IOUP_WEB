@@ -14,7 +14,7 @@ export default function ServiceItem({
   return (
     <>
       <Stack flexDirection={"row"} alignItems={"center"}>
-        <Box width={"50%"}>
+        <Box width={"50%"} data-animate={"slide"}>
           <Typography
             sx={{
               fontFamily: "Filson Pro",
@@ -33,6 +33,7 @@ export default function ServiceItem({
           width={"50%"}
           padding={{ md: "2rem", xs: 0 }}
           flexDirection={"column"}
+          data-animate={"slide2"}
         >
           <Typography
             sx={{

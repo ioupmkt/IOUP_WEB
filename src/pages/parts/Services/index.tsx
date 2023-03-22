@@ -53,7 +53,7 @@ export default function Services() {
         >
           Serviços
         </Typography>
-        <Divider color={"#00000030"} />
+        <Divider color={"#00000030"} data-animate="grow" />
 
         {services.map((service, index) => (
           <div key={index}>
@@ -67,6 +67,7 @@ export default function Services() {
               key={index.toString()}
               sx={{ margin: { md: "2rem 0", xs: "1rem 0" } }}
               color={"#00000030"}
+              data-animate="grow"
             />
           </div>
         ))}

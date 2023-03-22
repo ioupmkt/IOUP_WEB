@@ -18,7 +18,7 @@ export default function SocialList() {
   ];
 
   return (
-    <ul className={styles.SocialList}>
+    <ul className={styles.SocialList} data-animate={"grow"}>
       {sociallist.map((social) => (
         <SocialItem key={social.icon} link={social.link} icon={social.icon} />
       ))}
