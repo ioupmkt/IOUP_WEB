@@ -1,12 +1,15 @@
+import { ReactNode } from "react";
 import { RouterProvider } from "react-router-dom";
 import "./css/global.module.scss";
-
+type AppProps = {
+  children: ReactNode;
+};
 import { routes } from "./router";
-function App() {
+function App({ children }: AppProps) {
   return (
-    <main>
-      <RouterProvider router={routes} />
-    </main>
+    <>
+      <main>{children}</main>
+    </>
   );
 }
 
