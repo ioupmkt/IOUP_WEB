@@ -19,14 +19,10 @@ import ClientArea from "../ClientArea";
 import styles from "./styles.module.scss";
 
 const ScrollTo = (pos: any) => {
-  if (pos == "/portfolio") {
-    window.location.href = "portfolio";
-  } else {
-    let element = document.getElementById(pos);
+  let element = document.getElementById(pos);
 
-    element?.scrollIntoView({ behavior: "smooth", block: "start" });
-    return;
-  }
+  element?.scrollIntoView({ behavior: "smooth", block: "start" });
+  return;
 };
 
 const pages = [
@@ -50,10 +46,10 @@ const pages = [
     name: "Serviços",
     href: "services",
   },
-  {
-    name: "Portfolio",
-    href: "/portfolio",
-  },
+  // {
+  //   name: "Portfolio",
+  //   href: "portfolio",
+  // },
   { name: "Time", href: "team" },
 
   {

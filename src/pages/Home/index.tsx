@@ -8,6 +8,7 @@ import Inicio from "../parts/Home";
 import Nos_Move from "../parts/Mission";
 import Valores from "../parts/Values";
 import Team from "../parts/Team";
+import Portfolio from "../Portfolio";
 
 window.addEventListener("load", () => {
   const observer = new IntersectionObserver((entries) => {
@@ -56,6 +57,7 @@ function Home() {
       <Sobre />
       <Nos_Move />
       <Valores />
+      {/* <Portfolio /> */}
       <Services />
       <Team />
     </>
