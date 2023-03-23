@@ -20,7 +20,7 @@ import styles from "./styles.module.scss";
 
 const ScrollTo = (pos: any) => {
   if (pos == "/portfolio") {
-    return (window.location.pathname = "portfolio");
+    window.location.href = "portfolio";
   } else {
     let element = document.getElementById(pos);
 
