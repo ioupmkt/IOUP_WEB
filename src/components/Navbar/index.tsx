@@ -52,10 +52,10 @@ const pages = [
   // },
   { name: "Time", href: "team" },
 
-  {
-    name: "Contato",
-    href: "contact_us",
-  },
+  // {
+  //   name: "Contato",
+  //   href: "contact_us",
+  // },
 ];
 
 // document.addEventListener("scroll", function(){
