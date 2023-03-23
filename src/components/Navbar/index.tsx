@@ -20,17 +20,12 @@ import styles from "./styles.module.scss";
 
 const ScrollTo = (pos: any) => {
   if (pos == "/portfolio") {
-    window.location.href = "portfolio";
+    return (window.location.pathname = "portfolio");
   } else {
     let element = document.getElementById(pos);
 
     element?.scrollIntoView({ behavior: "smooth", block: "start" });
     return;
-  }
-  if (window.location.pathname == "/portfolio") {
-    if (pos == "home") {
-      window.location.href = "/";
-    }
   }
 };
 
