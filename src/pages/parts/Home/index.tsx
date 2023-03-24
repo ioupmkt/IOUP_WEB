@@ -3,11 +3,9 @@ import Background from "../../../components/Background";
 import { Section } from "../../../components/Section";
 import BtnEspecialista from "../../../components/BtnEspecialista";
 
-import { createRef } from "react";
-
 export default function Home() {
   return (
-    <Section name="home" id="home">
+    <Section name="home" id="home" margin="0 0 3rem 0">
       <Box
         sx={{
           display: "flex",
